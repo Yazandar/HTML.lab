@@ -1,6 +1,4 @@
-
-
- var visitorName=' '+ prompt('Please Enter Your Name');
+var visitorName=' '+ prompt('Please Enter Your Name');
  
  if(visitorName > 0){
      alert('Please your name not a number')
@@ -11,9 +9,11 @@
           alert('Hello'+visitorName);   
           
          }
-     document.write(visitorName);
+     
  
- 
+    prompt('how old are you?');
+    
+    prompt('Whats your favorite color?');
 
 
 
