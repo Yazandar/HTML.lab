@@ -1,38 +1,27 @@
 
-     function alerts(param1) {
-       alert(param1);
-     } 
-    
-     function info() {
+  function ask(par1,par2,par3) {
+    par1= prompt("whats your name?");
+    par2 = prompt("how old are you?");
+    while (par2<18) {
+        alert('you have to be over 18');
+        par2= prompt("how old are you?");
+    }
+    para3= prompt("whats you favorit number from 1 to 10?")
 
-      var age = prompt('how old are you?');
-
-      while(age < 18 ){
-      alerts("you have to be over 18");
-      age = prompt('how old are you?');
-      }
-
-      var visitorName=prompt('Please Enter Your Name');
- 
-      alerts('Hello'+" "+visitorName);
-      console.log(" ",visitorName," ",age,' years old');
-
+    console.log('visitor name is'+' '+par1+' '+par2+'years old')
     }
 
       function logos(num) {
-      for (i = 0; i < num; i++) {
-      document.write("<img src= 'https://freeiconshop.com/wp-content/uploads/edd/html-flat.png'/>");
-        
+        num=prompt('Rate HTML, 1-5');
+        for (i = 0; i < num; i++) {
+        document.write("<img src= 'https://freeiconshop.com/wp-content/uploads/edd/html-flat.png'/>");
         }
       }
 
     
 
-    info();
-    
-    var favNum=prompt('Whats your favorite number from 1 to 10?');
-
-    logos(favNum);
+    ask();
+    logos();
     
     
 
